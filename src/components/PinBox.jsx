@@ -14,6 +14,7 @@ export default function PinBox({
   height = 360,
   className,
   style,
+  onClick,
 }) {
   const resolvedBgImage = bgImage
     ? (bgImage.startsWith("/") ? bgImage : `/assets/images/section2/${bgImage}`)
@@ -33,6 +34,7 @@ export default function PinBox({
     backgroundRepeat: "no-repeat",
     overflow: "hidden",
     paddingTop: title ? 56 : 24,
+    cursor: onClick ? "pointer" : undefined,
     ...style,
   };
 
@@ -43,8 +45,22 @@ export default function PinBox({
           <Image src={pinIcon} alt="Pin" width={24} height={28} />
       </div>
       {/* Content box */}
-      <div style={boxStyle}>
-
+      <div
+        style={boxStyle}
+        onClick={onClick}
+        role={onClick ? "button" : undefined}
+        tabIndex={onClick ? 0 : undefined}
+        onKeyDown={
+          onClick
+            ? (e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  onClick();
+                }
+              }
+            : undefined
+        }
+      >
         <div
           style={{
             position: "absolute",
