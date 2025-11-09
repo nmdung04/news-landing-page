@@ -29,18 +29,9 @@ export default function Section2() {
             </h2>
   
              <PinBox title="" bgColor="#1ac8db" style={{ width: 300, height: 220, borderRadius: 0, marginLeft: 10 }}>
-                <AnimatedContent  distance = {100}
-                                  direction = 'vertical'
-                                  reverse = {false}
-                                  duration = {0.8}
-                                  ease = 'power3.out'
-                                  initialOpacity = {0}
-                                  animateOpacity = {true}
-                                  scale = {1}
-                                  threshold = {0.1}
-                                  delay = {0}
-                                  onComplete> 
-                                  <p style={{ fontSize: 13 , padding: 12}} className= "font-cabin" >Với phương châm “Tình thương - Chia sẻ - Phát triển - Hy vọng”, Làng Hy Vọng luôn đặt con người làm trung tâm của mọi hoạt động. Ở đó, những đứa trẻ không chỉ được dạy chữ, mà còn được dạy làm người, học nghề, rèn kỹ năng sống và tìm thấy ý nghĩa của sự trưởng thành. Có những em sau khi rời Làng, đã quay trở lại, mang theo tình yêu và lòng biết ơn để tiếp tục chăm lo cho những thế hệ sau như cách mà mình từng được yêu thương.</p></AnimatedContent>
+              
+              <p style={{ fontSize: 13 , padding: 12}} className= "font-cabin" >Với phương châm “Tình thương - Chia sẻ - Phát triển - Hy vọng”, Làng Hy Vọng luôn đặt con người làm trung tâm của mọi hoạt động. Ở đó, những đứa trẻ không chỉ được dạy chữ, mà còn được dạy làm người, học nghề, rèn kỹ năng sống và tìm thấy ý nghĩa của sự trưởng thành. Có những em sau khi rời Làng, đã quay trở lại, mang theo tình yêu và lòng biết ơn để tiếp tục chăm lo cho những thế hệ sau như cách mà mình từng được yêu thương.</p>
+                      
              </PinBox>
   
           </div>
