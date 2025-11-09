@@ -10,6 +10,10 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  --font-utm: var(--font-utm-banque);
+  --font-rukola: var(--font-iciel-rukola);
+  --font-cabin: var(--font-cabin);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +23,73 @@
   }
 }
 
+
+/* Scroll snap container + section + A4 sheet */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Demo scroll-snap styles for full-screen sections */
+.snap-container {
+  height: 100vh;           /* viewport height */
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.snap-section {
+  height: 100vh;     
+  width: 98vw;      /* each section full screen */
+  scroll-snap-align: start;
+  display: grid;
+  place-items: center;
+  padding: 0px;
+  /* Nền chung cho tất cả section */
+  background-image: url("/assets/images/background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  position: relative;
+  z-index: 0;
+
+}
+
+.snap-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.01);      /* làm tối */
+  backdrop-filter: blur(4px);       /* làm mờ nền */
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Inner A4 page scaled to fit 14" laptop viewport */
+.a4-sheet {
+  background: #fff;
+  color: #111;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+
+  background-image: url("/assets/images/background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* Maintain A4 portrait ratio ~ 210 / 297 */
+  aspect-ratio: 210 / 297;
+  width: min(90vw, 1200px, calc(100vh * (210 / 297)));
+  height: 97vh;
+
+  display: flex;
+  flex-direction: column;
+
+  position:  relative;
+  z-index: 10;
+}
+
+
