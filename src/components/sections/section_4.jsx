@@ -39,10 +39,10 @@ export default function Section4() {
           <p className="text-sm font-cabin mt-0 px-18 text-justify">
               bị cho tiết học văn hóa buổi sáng. Khi tiếng chuông báo hiệu giờ học vang lên ở Làng Hy Vọng, không gian lớp học liền trở nên rộn rã với ánh mắt sáng và bút chì lặng lẽ viết trên vở. Các em học sinh ở đây, phần lớn là những trẻ mồ côi, trẻ khuyết tật hoặc có hoàn cảnh khó khăn, bắt đầu ngày mới bằng tiết học văn hóa: Toán, Tiếng Việt, Ngoại ngữ, do giáo viên đứng lớp, kiên nhẫn hướng dẫn từng em. Sau giờ chính khóa vào buổi sáng, các em được chuyển sang phần học kỹ năng sống và nghề, các lớp may thêu, mộc mỹ nghệ, vi tính được tổ chức ngay trong khuôn viên Làng. Ví dụ như một nhóm các em lớp 12 đang thực hành trên máy may, dưới ánh đèn, bàn tay khéo léo vụng về nhưng đầy quyết tâm từng mũi chỉ, nó tựa như niềm tin mãnh liệt của em vào tương lai. 
           </p> */}
-          <div class="p-4 text-justify leading-relaxed text-[15px]">
+          <div class="pt-5 px-10 text-justify leading-relaxed text-[14px] font-cabin">
           <img
             src="/assets/images/section4/T-letter.svg"
-            class="w-24 float-left mr-3 mt-1 relative top-[-20px] left-[45px]"
+            class="w-20 float-left mr-0 -mb-5 relative top-[-20px] left-[35px]"
              alt=""
                />
                           ại Làng Hy Vọng, mỗi bình minh mở ra bằng tiếng chuông gọi lớp nhẹ nhàng
