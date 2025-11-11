@@ -46,15 +46,7 @@ export default function Section7() {
               Những chi tiết nhỏ như bữa cơm cùng anh chị, những buổi chiều giúp đỡ các em nhỏ, hay việc không bị bỏ lại phía sau trong học tập… chính là minh chứng cho một cộng đồng gắn kết, nơi mỗi thành viên được trân trọng, khuyến khích và trao cơ hội để phát triển. Câu nói “là nơi mình muốn quay về mỗi khi nghĩ về kỷ niệm đẹp” vang lên như một thông điệp về sự trưởng thành gắn liền với tình cảm, ký ức và giá trị sống, nơi mà mỗi bước đi, mỗi nụ cười và mỗi thành tích của các em đều được chắp cánh bởi lòng nhân ái, sự quan tâm và niềm tin từ Làng Hy Vọng.</p>
         </div>
       </div>      
-      {/* <AudioWavePlayer
-        src="/assets/media/sound/phaichiu.MP3"
-        bgClass="bg-cyan-400"
-        waveColor="#f2f2f2"
-        progressColor="#0b0b0b"
-        height={42}
-        barWidth={2}
-        barGap={2}
-      /> */}
+      
     </FullSection>
   );
 }
